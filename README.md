@@ -32,7 +32,7 @@ The following items will be included in the proposal:
 
 The binary can be built by following the build instructions in the `duality` repo. The tag to build on is [v0.1.0](https://github.com/duality-labs/duality/tree/v0.1.0). You can generate the binary following the [build instructions](https://github.com/duality-labs/duality/blob/v0.1.0/readme.md).
 
-  * [Linux amd64 build](interchain-security-cd)
+  * [Linux amd64 build](dualityd)
   * SHA256: `ed0f6229eeccab9c9101e97b2577a2008ce34e00bc3ec734d78dce501c223840`
 
 ### Genesis file
