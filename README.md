@@ -46,46 +46,13 @@ Final genesis file **with CCV state**: **[genesis.json](genesis.json)**
 The genesis file with was generated using the following settings:
 
 * Chain ID: `duality`
-* Denom: `dual`
+* Denom: `stake`
 * Signed blocks window: `"8640"`
 * Two additional genesis accounts were added to provide funds for a faucet and a relayer that will be run by the testnet coordinators.
-* Genesis file **without CCV state**: [`duality-fresh-genesis.json`](duality-fresh-genesis.json), SHA256: `[to fill in]`
-  * **This is provided only for verification, this is not the genesis file validators should be running their nodes with.**
 
 ## Endpoints
-
-* **p2p seeds : `[to fill in]`**
-* **p2p persistent peers : `[to fill in]`**
-* These peers represent the `goc-coordinator` and `goc-backup` validators (run by the testnet coordinators). 
-* The `goc-backup` validator node will be running on Duality shortly after the genesis file that includes the CCV state (Cross Chain Validation state) has been published.
-* The `goc-coordinator` validator node has an overwhelming majority of the voting power, and we aim to start it two hours after the spawn time is reached. 67% of the voting power needs to come online for consumer chains to start. Once the `goc-coordinator` is live, the chain will progress.
-* Please keep in mind that any validator that does not come online after 67% of the voting power is up and running, is likely to be slashed for downtime, potentially resulting in being jailed (the `signed_blocks_window` parameter is set to `8640`).
 
 
 ## Join via Bash Script
 
-On the node machine:
-- Copy the `node_key.json` and `priv_validator_key.json` files for your validator.
-  - **These should be the same ones as the ones from your provider node**.
-- Run one of the following scripts:
-  - Duality service: [duality-init.sh](duality-init.sh)
-  - Cosmovisor service: [duality-init-cv.sh](duality-init-cv.sh)
-- Wait until the spawn time is reached and the genesis file with the CCV states is available.
-- Overwrite the genesis file with the one that includes the CCV states.
-  - The default location is `$HOME/.duality/config/genesis.json`.
-- Enable and start the service:
-  - Duality
-    ```
-    sudo systemctl enable duality
-    sudo systemctl start duality
-    ```
-  - Cosmovisor
-    ```
-    sudo systemctl enable cv-duality
-    sudo systemctl start cv-duality
-    ```
-- To follow the log, use:
-  - Duality: `journalctl -fu duality`
-  - Cosmovisor: `journalctl -fu cv-duality`
-- If the log does not show up right away, run `systemctl restart systemd-journald`.
 
