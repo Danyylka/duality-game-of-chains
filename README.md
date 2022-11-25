@@ -30,7 +30,7 @@ The following items will be included in the proposal:
 
 ### Binary
 
-The binary published in this repo is the `interchain-security-cd` binary built using the `interchain-security` repo tag [v0.2.0](https://github.com/cosmos/interchain-security/releases/tag/v0.2.0). You can generate the binary following the [build instructions](https://github.com/cosmos/interchain-security#instructions).
+The binary can be built by following the build instructions in the `duality` repo. The tag to build on is [v0.1.0](https://github.com/duality-labs/duality/tree/v0.1.0). You can generate the binary following the [build instructions](https://github.com/duality-labs/duality/blob/v0.1.0/readme.md).
 
   * [Linux amd64 build](interchain-security-cd)
   * SHA256: `[to fill in]`
