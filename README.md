@@ -1,2 +1,4 @@
-# duality-game-of-chains
-Duality on Game of Chains ICS testnet
+# Duality Chain Information
+Welcome to Duality's Game of Chains testnet!
+
+
