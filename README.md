@@ -16,7 +16,7 @@ Contents
   * 2022-11-29: The `goc-coordinator` validator will start signing on Duality at `2022-11-29T14:00:00.000000Z`.
 
 
-Duality will launch as a consumer chain through a governance proposal in the `provider` chain. Read the [Consumer Chain Start Process](/docs/Consumer-Chain-Start-Process.md) page for more details about the workflow.
+Duality will launch as a consumer chain through a governance proposal in the `provider` chain. Read the [Consumer Chain Start Process](https://github.com/hyphacoop/ics-testnets/blob/main/docs/Consumer-Chain-Start-Process.md#consumer-chain-start-process) page for more details about the workflow.
 
 The following items will be included in the proposal:
 * Genesis file hash
