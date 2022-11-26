@@ -28,12 +28,18 @@ The following items will be included in the proposal:
 
 ## Chain Data
 
-### Binary
+### Downloading the binary
 
-The binary can be built by following the build instructions in the `duality` repo. The tag to build on is [v0.1.0](https://github.com/duality-labs/duality/tree/v0.1.0). You can generate the binary following the [build instructions](https://github.com/duality-labs/duality/blob/v0.1.0/readme.md).
+[Duality](https://github.com/duality-labs/duality) v0.1.0 binaries are [available for download](https://github.com/duality-labs/duality/releases/tag/v0.1.0).
 
-  * [Linux amd64 build](dualityd)
-  * SHA256: `ed0f6229eeccab9c9101e97b2577a2008ce34e00bc3ec734d78dce501c223840`
+### Building from source
+
+Steps to build:
+1. Install the [Ignite CLI](https://docs.ignite.com/guide/install): `curl https://get.ignite.com/cli@v0.25.2\! | bash`
+2. Check out the duality repo at the release tag: `git clone -b v0.1.0 git@github.com:duality-labs/duality.git`
+3. Build the binary: `cd duality && ignite chain build -t linux:amd64` (substituting your target os:arch)
+
+The binary will output to `$GOHOME/bin/dualityd`, with sha256 checksum `ed0f6229eeccab9c9101e97b2577a2008ce34e00bc3ec734d78dce501c223840`.
 
 ### Genesis file
 
@@ -51,10 +57,3 @@ The genesis file with was generated using the following settings:
 * Denom: `stake`
 * Signed blocks window: `"8640"`
 * Two additional genesis accounts were added to provide funds for a faucet and a relayer that will be run by the testnet coordinators.
-
-## Endpoints
-
-
-## Join via Bash Script
-
-
