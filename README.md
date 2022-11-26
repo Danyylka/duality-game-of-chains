@@ -13,7 +13,6 @@ Contents
   * 2022-11-25: Proposal 1 goes into voting period
   * 2022-11-28: Proposal 1 voting period ends
   * 2022-11-28: Spawn time: `2022-11-28T14:00:00.000000Z`
-  * 2022-11-29: The `goc-coordinator` validator will start signing on Duality at `2022-11-29T14:00:00.000000Z`.
 
 
 Duality will launch as a consumer chain through a governance proposal in the `provider` chain. Read the [Consumer Chain Start Process](https://github.com/hyphacoop/ics-testnets/blob/main/docs/Consumer-Chain-Start-Process.md#consumer-chain-start-process) page for more details about the workflow.
