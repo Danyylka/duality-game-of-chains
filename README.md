@@ -60,4 +60,4 @@ The genesis file with was generated using the following settings:
 ### Endpoints:
 
 * **p2p seeds: `c6074d581d5a93fdf8e13a1a6da41a142189c1a9@tenderseed.ccvalidators.com:29069`**
-* **p2p persistent-peers: `4ef4fbd13deb2a9bd2968b3a834f90e8853efb9e@65.108.192.123:23656,ec639fefab60700e79d22bcac1be522b2149acab@35.247.122.206:26656,f43dacf4268152a1283b7e9c85c7e9f2a2228aa6@34.168.169.88:26656`
+* **p2p persistent-peers: `4ef4fbd13deb2a9bd2968b3a834f90e8853efb9e@65.108.192.123:23656,ec639fefab60700e79d22bcac1be522b2149acab@35.247.122.206:26656,f43dacf4268152a1283b7e9c85c7e9f2a2228aa6@34.168.169.88:26656`**
