@@ -38,7 +38,7 @@ Steps to build:
 2. Check out the duality repo at the release tag: `git clone -b v0.1.0 git@github.com:duality-labs/duality.git`
 3. Build the binary: `cd duality && ignite chain build -t linux:amd64` (substituting your target os:arch)
 
-The binary will output to `$GOHOME/bin/dualityd`, with sha256 checksum `ed0f6229eeccab9c9101e97b2577a2008ce34e00bc3ec734d78dce501c223840`.
+The binary will be output to `$GOHOME/bin/dualityd`, with sha256 checksum `ed0f6229eeccab9c9101e97b2577a2008ce34e00bc3ec734d78dce501c223840`.
 
 ### Genesis file
 
@@ -50,7 +50,7 @@ Final genesis file **with CCV state**: **to be specified after CCV state is gene
 - SHA256: `4bb82a71d22f71e1bf5ffebc28e28f1986243418846663a2c16c1a5a60757d70`
 - Validators must replace their `config/genesis.json` file with this one before running the binary.
 
-The genesis file with was generated using the following settings:
+The genesis file was generated using the following settings:
 
 * Chain ID: `duality`
 * Denom: `stake`
